@@ -22,3 +22,26 @@ footer p {
     font-size: 0.6rem;
     margin: 0.5rem;
 }
+#container{
+    display: flex;
+}
+#cartao{
+    margin: 2rem;
+    height: 20rem;
+    background-color: rgb(104, 29, 173);
+}
+.cartao-conteudo{
+    text-align:center ;
+    height: 100%;
+    background-color: blueviolet;
+}
+.cartao-conteudo h3{
+    background-color: rgb(147, 115, 177);
+    color: white;
+    text-align: left;
+    padding: 0.5rem;
+    position: absolute;
+    margin: 0.6rem;
+    border-radius: 0.6rem;
+    font-size: 1vw;
+}
