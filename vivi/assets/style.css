@@ -1,53 +1,65 @@
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-*{
+
+* {
     margin: 0;
-    padding: 0%;
+    padding: 0;
 }
 
-body{
-    background: url(img/bg-desktop.webp);
-    background-color: rgb(78, 155, 255);
-    font-family: 'Bai Jamjuree', sans-serif;
+:root {
+    --cor-do-texto: #ffffff;
+    --cor-do-texto: #144480;
+    --cor-do-texto: #ffffff;
+}
+
+body {
+    background: url(../assets/img/bg-desktop.webp);
+    font-family: ' Bai jamjuree', sans-serif;
 }
 
 footer {
-    background-color: black;
-    color: white;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 81, 255);
     position: fixed;
     width: 100%;
     height: 2rem;
 }
+
 
 footer p {
     text-align: center;
     font-size: 0.6rem;
     margin: 0.5rem;
 }
-#container{
+
+#container {
     display: flex;
     flex-wrap: wrap;
 }
-.cartao{
+
+.cartao {
     margin: 2rem;
     height: 20rem;
-    background-color: rgb(29, 183, 255);
+    background-color: rgb(0, 73, 156);
+    border-radius: 15px;
 }
-.cartao:hover .cartao-conteudo{
+
+.cartao:hover .cartao-conteudo {
     transform: rotateY(180deg);
 }
 
-.cartao-conteudo{
-    text-align:center ;
-    height: 100%;
+.cartao-conteudo {
+    text-align: center;
+    height: 80%;
     padding: 20px;
-
     transform-style: preserve-3d;
-    transition: transform 500ms  ease-in-out;
+    transition: transform 500ms ease-in-out;
+    backface-visibility: hidden;
 
 }
-.cartao-conteudo h3{
-    background-color: rgb(0, 103, 172);
-    color: white;
+
+.cartao-conteudo h3 {
+    background-color: rgb(90, 78, 255);
+    color: black;
     text-align: left;
     padding: 0.5rem;
     position: absolute;
@@ -56,16 +68,17 @@ footer p {
     font-size: 1vw;
     backface-visibility: hidden;
 }
-.cartao-conteudo-pergunta{
+
+.cartao-conteudo-pergunta {
+    color: var(--cor-do-texto);
     font-weight: 500;
-    color: var(--cor-de-texto);
-}
-.cartao-conteudo-pergunta,
-.cartao-conteudo-resposta {
-  margin: 1em;
-  backface-visibility: hidden;
 }
 
-.cartao-conteudo-resposta{
-  transform: rotateY(180deg);
+.cartao-conteudo-pergunta,
+.cartao-conteudo-resposta {
+    backface-visibility: hidden;
+}
+
+.cartao-conteudo-resposta {
+    transform: rotateY(180deg);
 }
